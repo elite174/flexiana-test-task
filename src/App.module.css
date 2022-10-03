@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "search search"
+    "repos users";
+  gap: 1rem;
+
+  height: 100vh;
+
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.reposSection,
+.usersSection {
+  overflow: hidden;
+}
+
+.searchSection {
+  grid-area: search;
+}
+
+.reposSection {
+  grid-area: repos;
+}
+
+.usersSection {
+  grid-area: users;
+}
