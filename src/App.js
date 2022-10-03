@@ -23,6 +23,8 @@ const App = () => {
     getters,
   } = useStore();
 
+  // fetching the data is an effect
+  // which depends on store links
   const isReposPendingRequest = useFetchData(store, "repos", updateStore);
   const isUsersPendingRequest = useFetchData(store, "users", updateStore);
 
